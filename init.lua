@@ -66,7 +66,7 @@ return {
     -- Set up custom filetypes
     vim.filetype.add {
       extension = {
-        tf = "hcl",
+        tf = "terraform",
       },
       -- filename = {
       --   ["Foofile"] = "fooscript",
