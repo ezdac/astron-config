@@ -53,7 +53,15 @@ return {
       function() require("harpoon.ui").nav_file(4) end,
       desc = "Harpoon 4",
     },
-    --
+    -- Spectre global search/replace
+    ["<leader>R"] = {
+      function() require("spectre").open() end,
+      desc = "Replace",
+    },
+    ["<leader>Rw"] = {
+      function() require("spectre").open_visual { select_word = true } end,
+      desc = "Replace",
+    },
     -- GitHub / octo
     ["<leader>G"] = { name = " GitHub" },
     ["<leader>Gi"] = { "<cmd>Octo issue list<cr>", desc = "Open Issues" },
@@ -78,6 +86,10 @@ return {
     ["<leader>i"] = {
       "<cmd>IconPickerInsert<CR>",
       desc = "😃 Pick icon",
+  v = {
+    ["<leader>rw"] = {
+      function() require("spectre").open_visual() end,
+      desc = "Replace current word",
     },
   },
 }
