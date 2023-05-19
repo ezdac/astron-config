@@ -70,6 +70,9 @@ return {
       function() require("spectre").open_visual { select_word = true } end,
       desc = "Replace",
     },
+    -- git overwrite
+    -- TODO can we prompt for a arg?
+    -- ["<leader>gd"] = { "<cmd>DiffviewOpen arg<cr>", desc = "View Git diff" }
     -- GitHub / octo
     ["<leader>G"] = { name = " GitHub" },
     ["<leader>Gi"] = { "<cmd>Octo issue list<cr>", desc = "Open Issues" },
