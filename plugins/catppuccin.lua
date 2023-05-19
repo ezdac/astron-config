@@ -1,12 +1,12 @@
 return {
   "catppuccin/nvim",
-  as = "catppuccin",
+  name = "catppuccin",
   opts = {
     flavour = "macchiato", -- latte, frappe, macchiato, mocha
-    background = {
-      light = "latte",
-      dark = "mocha",
-    },
+    -- background = {
+    --   light = "latte",
+    --   dark = "mocha",
+    -- },
     dim_inactive = {
       enabled = true,
       -- shade = "dark",
@@ -14,7 +14,7 @@ return {
     },
     integrations = {
       aerial = true,
-      notify = true,
+      notify = false,
       mason = true,
       harpoon = true,
       dashboard = true,
@@ -24,7 +24,7 @@ return {
       ts_rainbow2 = true,
       telescope = true,
       which_key = true,
-      trouble = true,
+      lsp_trouble = true,
       native_lsp = {
         enabled = true,
         virtual_text = {
