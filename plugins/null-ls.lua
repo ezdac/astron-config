@@ -42,7 +42,8 @@ return {
       formatting.reorder_python_imports,
       -- set linter
       diagnostics.mypy,
-      diagnostics.golangci_lint,
+      -- TODO already provided by LSP?
+      -- diagnostics.golangci_lint,
       diagnostics.gitlint,
       diagnostics.clj_kondo,
       diagnostics.commitlint,
