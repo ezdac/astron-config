@@ -7,6 +7,7 @@ return {
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
+    --
     -- mappings seen under group name "Buffer"
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
@@ -20,6 +21,13 @@ return {
     ["<leader>t"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
+    -- TODO remap default p / P
+    ["<leader>P"] = { name = "⛏️ Pick" },
+    --
+    ["<leader>Pi"] = {
+      "<cmd>IconPickerInsert<CR>",
+      desc = "😃 Icon",
+    },
     --
     -- TODO remap lower case h core functionality to H
     -- and use h for harpoon
@@ -82,10 +90,6 @@ return {
   --   -- setting a mapping to false will disable it
   --   -- ["<esc>"] = false,
   -- },
-  i = {
-    ["<leader>i"] = {
-      "<cmd>IconPickerInsert<CR>",
-      desc = "😃 Pick icon",
   v = {
     ["<leader>rw"] = {
       function() require("spectre").open_visual() end,
